@@ -8,7 +8,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 `
 
 function randomHexCharacter() {
-  return Math.floor(Math.random() * 256).toString(16).padStart(2, '0')
+  return Math.floor(Math.random() * 256).toString(16).padStart(2, '0').toUpperCase()
 }
 
 function setRandomStrings() {
