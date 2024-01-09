@@ -1,6 +1,6 @@
 FROM node:20 as node
 WORKDIR /usr/src/app
-COPY package*.json .
+COPY package*.json ./
 COPY yarn.lock .
 RUN yarn
 COPY . .
