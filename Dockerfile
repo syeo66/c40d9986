@@ -1,10 +1,9 @@
 FROM node:20 as node
 WORKDIR /usr/src/app
 COPY package*.json ./
-COPY yarn.lock .
-RUN yarn
+RUN npm install
 COPY . .
-RUN yarn build 
+RUN npm run build 
 
 FROM nginx as server
 
