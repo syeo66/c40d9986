@@ -4,7 +4,9 @@ import './style.css'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <div class="bg">
 </div>
+<div class="main">
 <h1>c40d9986</h1>
+</div>
 `
 
 function randomHexCharacter() {

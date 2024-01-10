@@ -34,7 +34,10 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
   display: block;
-  box-shadow: 0 0 0 100px #333;
+  text-shadow: 0 0 1em rgba(0, 0, 0, 1),
+    0 0 2em rgba(0, 0, 0, 1),
+    0 0 3em rgba(0, 0, 0, 1),
+    0 0 4em rgba(0, 0, 0, 1);
 }
 
 #app {
@@ -56,3 +59,14 @@ h1 {
   contain: paint;
 }
 
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  place-items: center;
+  display: flex;
+  justify-content: center;
+}
