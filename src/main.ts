@@ -14,7 +14,7 @@ function randomHexCharacter() {
 }
 
 function setRandomStrings() {
-  document.querySelector<HTMLDivElement>('.bg')!.innerText = Array(9000).fill("").map(() => randomHexCharacter()).join('') 
+  document.querySelector<HTMLDivElement>('.bg')!.innerText = Array(12000).fill("").map(() => randomHexCharacter()).join('')
 }
 
 setRandomStrings()
